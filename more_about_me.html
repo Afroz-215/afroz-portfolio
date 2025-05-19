@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>More About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      color: #ededed;
+      background: #081b29;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: hsl(216, 80%, 8%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 25px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 30px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0ef;
+    }
+
+    .about-section {
+      padding: 100px 10% 50px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #0ef;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .info-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .info-list li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .info-list li span {
+      font-weight: 600;
+      color: #0ef;
+    }
+
+    .btn-box {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #0ef;
+      border-radius: 40px;
+      font-size: 16px;
+      color: #081b29;
+      letter-spacing: 1px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+      margin-top: 30px;
+    }
+
+    .btn-box:hover {
+      box-shadow: 0 0 5px cyan,
+                  0 0 25px cyan,
+                  0 0 50px cyan,
+                  0 0 100px cyan,
+                  0 0 200px cyan;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Afroz</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h1>More About Me</h1>
+    <p>Hello! I'm <strong>Afroz</strong>, a passionate Computer Science Engineer from Millennium Institute of Technology, Bhopal. I completed my B.Tech in May 2025 and have been working on projects that reflect both my technical skills and creativity.</p>
+    
+    <p>I specialize in front-end development and have a keen interest in responsive design, animations, and user-friendly web experiences. I'm constantly exploring new technologies and love solving real-world problems through code.</p>
+
+    <ul class="info-list">
+      <li><span>Full Name:</span> Afroz </li>
+      <li><span>Graduation:</span> B.Tech CSE, 2025</li>
+      <li><span>College:</span> Millennium Institute of Technology, Bhopal</li>
+      <li><span>Skills:</span> HTML, CSS, JavaScript, React, Git</li>
+      <li><span>Hobbies:</span> Coding, Design, Music, Learning New Tech</li>
+    </ul>
+
+    <a href="index.html" class="btn-box">Back to Home</a>
+  </section>
+
+</body>
+</html>

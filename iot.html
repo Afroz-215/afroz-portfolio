@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IoT Development</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #081b29;
+      color: #ededed;
+      line-height: 1.7;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: hsl(216, 80%, 8%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 25px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0ef;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 120px auto 50px;
+      padding: 0 20px;
+    }
+
+    h1.section-title {
+      font-size: 48px;
+      color: #0ef;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn-box {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #0ef;
+      border-radius: 40px;
+      color: #081b29;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+      margin-top: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .btn-box:hover {
+      box-shadow: 0 0 5px cyan,
+                  0 0 25px cyan,
+                  0 0 50px cyan,
+                  0 0 100px cyan;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Afroz</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1 class="section-title">IoT <span style="color:#fff">Development</span></h1>
+
+    <p>
+      I have completed a project using IoT platforms like NodeMCU and sensors such as DHT11 and BMP180. This hands-on experience helped me understand how to connect devices to the cloud for real-time data monitoring and control.
+    </p>
+
+    <p>
+      My IoT skills include:
+    </p>
+
+    <ul>
+      <li>Integrating sensors and microcontrollers for data collection.</li>
+      <li>Developing cloud-based applications to visualize and manage data.</li>
+      <li>Creating automated alerts and controls for smart systems.</li>
+      <li>Using platforms like Arduino IDE and MQTT for communication.</li>
+    </ul>
+
+    <p>
+      I am eager to expand my knowledge in IoT technologies and apply them to solve real-world problems.
+    </p>
+
+    <a href="index.html" class="btn-box">Back to Home</a>
+  </section>
+</body>
+</html>
