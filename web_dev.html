@@ -2,137 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Development</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Development - Afroz</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #081b29;
       color: #ededed;
-      background: #081b29;
-    }
-
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px 10%;
-      background: hsl(216, 80%, 8%);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 25px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .navbar a {
-      font-size: 18px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      margin-left: 30px;
-      transition: 0.3s;
-    }
-
-    .navbar a:hover {
-      color: #0ef;
-    }
-
-    .section {
-      padding: 100px 10% 50px;
       max-width: 900px;
-      margin: auto;
+      margin: 60px auto;
+      padding: 0 20px;
     }
-
-    h1.section-title {
-      font-size: 48px;
+    h1 {
       color: #0ef;
       text-align: center;
       margin-bottom: 40px;
     }
-
-    .section p {
+    p {
       font-size: 18px;
-      line-height: 1.8;
       margin-bottom: 20px;
+      line-height: 1.6;
     }
-
-    .section ul {
-      margin-left: 20px;
-      font-size: 18px;
-      line-height: 1.8;
-      list-style: square;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 30px;
     }
-
-    .btn-box {
+    a.back {
       display: inline-block;
-      padding: 12px 28px;
       background: #0ef;
-      border-radius: 40px;
-      font-size: 16px;
       color: #081b29;
+      padding: 12px 25px;
+      border-radius: 40px;
       text-decoration: none;
       font-weight: 600;
-      margin-top: 30px;
-      box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+      box-shadow: 0 0 5px #0ef;
+      transition: box-shadow 0.3s ease;
     }
-
-    .btn-box:hover {
-      box-shadow: 0 0 5px cyan,
-                  0 0 25px cyan,
-                  0 0 50px cyan,
-                  0 0 100px cyan;
+    a.back:hover {
+      box-shadow: 0 0 25px cyan;
     }
   </style>
 </head>
 <body>
+  <h1>Web Development</h1>
+  <p>
+    I build interactive web applications using HTML, CSS, and JavaScript, focusing on creating dynamic and responsive experiences.
+  </p>
+  <p>Notable projects include:</p>
+  <ul>
+    <li><strong>Tic-Tac-Toe Game:</strong> A fully responsive game with real-time winner detection and user-friendly interface.</li>
+    <li><strong>SmartQuiz App:</strong> A dynamic quiz app featuring timed questions, instant scoring, and responsive design.</li>
+  </ul>
+  <p>These projects helped me improve skills in DOM manipulation, event handling, and responsive UI development.</p>
 
-  <header class="header">
-    <a href="index.html" class="logo">Afroz</a>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <section class="section">
-    <h1 class="section-title">Web <span style="color:#fff">Development</span></h1>
-
-    <p>
-      As a passionate and motivated fresher in web development, I focus on building responsive and user-friendly websites using HTML5, CSS3, and JavaScript. I'm continuously improving my skills by working on personal projects and learning modern tools and frameworks like React.js and Node.js. I enjoy turning ideas into real, functional websites and aim to create clean, efficient code that offers a great user experience across all devices.
-    </p>
-
-    <p>
-      I work with the following stack and tools:
-    </p>
-
-    <ul>
-      <li><strong>Languages:</strong> HTML5, CSS3, JavaScript</li>
-      <li><strong>Frameworks:</strong> React.js</li>
-      <li><strong>Version Control:</strong> Git, GitHub</li>
-      <li><strong>Tools:</strong> VS Code, Postman, Chrome DevTools</li>
-    </ul>
-
-    <p>
-      From landing pages and portfolios to dynamic web applications, I focus on performance, accessibility, and modern design principles.
-    </p>
-
-    <a href="index.html" class="btn-box">Back to Home</a>
-  </section>
-
+  <a href="index.html" class="back">Back to Home</a>
 </body>
 </html>

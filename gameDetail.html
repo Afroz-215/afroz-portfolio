@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>IoT Development</title>
+  <title>Tic-Tac-Toe Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -64,9 +65,29 @@
       margin-bottom: 40px;
     }
 
+    .project-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+      display: block;
+      max-width: 100%;
+    }
+
     p {
       font-size: 18px;
       margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
     .btn-box {
@@ -89,6 +110,19 @@
                   0 0 50px cyan,
                   0 0 100px cyan;
     }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 20px 5%;
+      }
+      .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      h1.section-title {
+        font-size: 36px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -102,25 +136,25 @@
   </header>
 
   <section class="section">
-    <h1 class="section-title">IoT <span style="color:#fff">Development</span></h1>
+    <h1 class="section-title">Tic-Tac-Toe <span style="color:#fff">Game</span></h1>
+
+    <img src="tic-tac-toe.jpg" alt="Tic-Tac-Toe Game" class="project-img">
 
     <p>
-      I have completed a project using IoT platforms like NodeMCU and sensors such as DHT11 and BMP180. This hands-on experience helped me understand how to connect devices to the cloud for real-time data monitoring and control.
+      A classic Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript, designed for an engaging and responsive experience.
     </p>
 
-    <p>
-      My IoT skills include:
-    </p>
-
+    <p>Key features:</p>
     <ul>
-      <li>Integrating sensors and microcontrollers for data collection.</li>
-      <li>Developing cloud-based applications to visualize and manage data.</li>
-      <li>Creating automated alerts and controls for smart systems.</li>
-      <li>Using platforms like Arduino IDE and MQTT for communication.</li>
+      <li>3x3 grid layout with real-time interaction</li>
+      <li>Turn-based logic and clear UI feedback</li>
+      <li>Automatic winner detection and draw handling</li>
+      <li>Disabled cells after play to prevent re-clicking</li>
+      <li>Reset and new game functionality for replay</li>
     </ul>
 
     <p>
-      I am eager to expand my knowledge in IoT technologies and apply them to solve real-world problems.
+      This project highlights interactive game logic, clean UI design, and efficient JavaScript event handling.
     </p>
 
     <a href="index.html" class="btn-box">Back to Home</a>

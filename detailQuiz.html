@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartQuiz Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #081b29;
+      color: #ededed;
+      line-height: 1.7;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: hsl(216, 80%, 8%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 25px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #0ef;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 120px auto 50px;
+      padding: 0 20px;
+    }
+
+    h1.section-title {
+      font-size: 48px;
+      color: #0ef;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+      display: block;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .btn-box {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #0ef;
+      border-radius: 40px;
+      color: #081b29;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+      margin-top: 20px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .btn-box:hover {
+      box-shadow: 0 0 5px cyan,
+                  0 0 25px cyan,
+                  0 0 50px cyan,
+                  0 0 100px cyan;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 20px 5%;
+      }
+      .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      h1.section-title {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Afroz</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1 class="section-title">Smart<span style="color:#fff">Quiz</span></h1>
+
+    <img src="smartQuiz.jpg" alt="SmartQuiz" class="project-img">
+
+    <p>
+      SmartQuiz is a dynamic web-based quiz application built using HTML, CSS, and JavaScript. It features a clean and responsive interface optimized for both desktop and mobile users.
+    </p>
+
+    <p>Key features include:</p>
+    <ul>
+      <li>Timed questions to challenge users and increase engagement.</li>
+      <li>Instant score calculation and result display.</li>
+      <li>Answer validation with immediate feedback.</li>
+      <li>Modern, mobile-friendly UI design for a smooth experience.</li>
+    </ul>
+
+    <p>
+      This project showcases my skills in frontend web development and creating interactive, user-focused applications.
+    </p>
+
+    <a href="index.html" class="btn-box">Back to Home</a>
+  </section>
+</body>
+</html>
