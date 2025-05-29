@@ -53,31 +53,40 @@
     }
 
     .section {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 120px auto 50px;
       padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
     }
 
-    h1.section-title {
-      font-size: 48px;
-      color: #0ef;
-      text-align: center;
-      margin-bottom: 40px;
+    .text-content {
+      flex: 1 1 60%;
+    }
+
+    .image-content {
+      flex: 1 1 35%;
     }
 
     .project-img {
       width: 100%;
-      height: auto;
       border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
+      object-fit: cover;
+      max-height: 400px;
+    }
+
+    h1.section-title {
+      font-size: 42px;
+      color: #0ef;
       margin-bottom: 30px;
-      box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
-      display: block;
-      max-width: 100%;
     }
 
     p {
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     ul {
@@ -112,15 +121,17 @@
     }
 
     @media (max-width: 768px) {
-      .header {
-        padding: 20px 5%;
+      .section {
+        flex-direction: column;
+        text-align: center;
       }
-      .navbar a {
-        font-size: 16px;
-        margin-left: 20px;
-      }
+
       h1.section-title {
         font-size: 36px;
+      }
+
+      .project-img {
+        max-height: 300px;
       }
     }
   </style>
@@ -136,28 +147,28 @@
   </header>
 
   <section class="section">
-    <h1 class="section-title">Tic-Tac-Toe <span style="color:#fff">Game</span></h1>
+    <div class="text-content">
+      <h1 class="section-title">Tic-Tac-Toe <span style="color:#fff">Game</span></h1>
+      <p>
+        A classic Tic-Tac-Toe game built using HTML, CSS, and JavaScript, offering a fun and interactive experience with a polished UI.
+      </p>
+      <p>Key Features:</p>
+      <ul>
+        <li>3x3 grid with real-time gameplay</li>
+        <li>Turn-based logic and UI feedback</li>
+        <li>Winner and draw detection</li>
+        <li>Disabled cells after play</li>
+        <li>Reset & new game functionality</li>
+      </ul>
+      <p>
+        This project showcases DOM manipulation, condition handling, and a clean interactive design.
+      </p>
+      <a href="index.html" class="btn-box">Back to Home</a>
+    </div>
 
-    <img src="tic-tac-toe.jpg" alt="Tic-Tac-Toe Game" class="project-img">
-
-    <p>
-      A classic Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript, designed for an engaging and responsive experience.
-    </p>
-
-    <p>Key features:</p>
-    <ul>
-      <li>3x3 grid layout with real-time interaction</li>
-      <li>Turn-based logic and clear UI feedback</li>
-      <li>Automatic winner detection and draw handling</li>
-      <li>Disabled cells after play to prevent re-clicking</li>
-      <li>Reset and new game functionality for replay</li>
-    </ul>
-
-    <p>
-      This project highlights interactive game logic, clean UI design, and efficient JavaScript event handling.
-    </p>
-
-    <a href="index.html" class="btn-box">Back to Home</a>
+    <div class="image-content">
+      <img src="tic-tac-toe.png" alt="Tic-Tac-Toe Game" class="project-img">
+    </div>
   </section>
 </body>
 </html>
